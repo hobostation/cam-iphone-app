@@ -1,0 +1,3074 @@
+/* These are all my alterations to the structure mobile css CAM 2014 */
+
+/*!
+* 
+*
+*/
+
+
+/* ui hyperlink overides */
+p a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+font-style: italic;
+}
+
+
+/* normalizes welsh accents to normal font weight/ ptherwise they stay bold */
+.char-normalize {
+  color: #b0b0b0;
+  font-weight: normal !important;
+}
+
+/* sidepanel archive sublinks  */
+
+.archive-subleft {
+  margin-left: 1em;
+}
+
+/* panel bold for welsh worlds  */
+
+.panel-welsh-bold {
+    font-weight: bold;
+
+}
+
+/* panel bold archive words  */
+.archive-subleft {
+  margin-left: 1em;
+  font-weight:bold;
+}
+
+/* These are all my alterations to the inapp browser */
+
+.inAppBrowserWrap {
+  background-color: rgba(0,0,0,0.75);
+  color: rgba(235,235,235,1.0);
+}
+.inAppBrowserWrap menu {
+  overflow: auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.inAppBrowserWrap menu li {
+  font-size: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  background: rgba(30,30,30,0.50);
+}
+.inAppBrowserWrap menu li.disabled {
+    color: #777;
+}
+
+
+/* HOMESCREEN CSS  */
+
+/* take the padding out on the body div */
+.ui-body {
+  position: relative;
+  padding: .0em 0em;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+
+/* take the padding out on the body div */
+.ui-content {
+    
+    padding: 0em;
+}
+
+
+/* main screen top image with latest show */
+.main-latest-show {
+margin-left: 30px;
+margin-bottom: 85px;
+
+
+}
+
+/* main footer text */
+.main-footer {
+
+
+font-weight: bold !important;
+
+position: relative;
+font-size: 0.7em;
+width: 155px;
+
+margin-left: auto;
+margin-right: auto;
+overflow:hidden;
+top: -20px;
+
+}
+
+.main-footer p {
+
+color: black;
+}
+
+
+   
+@font-face {
+font-family: "letter gothic";
+src: url("../fonts/letter_gothic.ttf") format("opentype");   
+    /* Make sure you defined the correct path, which is related to
+        the location of your file `main.css` */ 
+}
+
+
+@font-face {
+font-family: "High Tide";
+src: url("../fonts/HighTide.otf") format("opentype");   
+    /* Make sure you defined the correct path, which is related to
+        the location of your file `main.css` */ 
+}
+
+
+@font-face {
+font-family: "High Tide Sans";
+src: url("../fonts/HighTideSans.otf") format("opentype");   
+    /* Make sure you defined the correct path, which is related to
+        the location of your file `main.css` */ 
+}
+
+@font-face {
+font-family: "Helvetica Neue";
+src: url("../fonts/HelveticaNeue.dfont") format("opentype");   
+    /* Make sure you defined the correct path, which is related to
+        the location of your file `main.css` */ 
+}
+
+
+
+@font-face {
+font-family: "Steinburg Symbols";
+src: url("../fonts/SteinbergChord Symbols.ttf") format("opentype");   
+    /* Make sure you defined the correct path, which is related to
+        the location of your file `main.css` */ 
+}
+
+
+
+
+
+ /* original CAM TITLE */ 
+.logo-text {
+font-family: "High Tide Sans";
+
+}
+
+/* NEW CAM TITLE FOR CLOSER GAP FOR THE LETTER C*/ 
+.logo-text-left {
+font-family: "High Tide Sans";
+left: 0.2em;
+position:relative;
+
+}
+
+/* NEW CAM TITLE FOR CLOSER GAP FOR THE LETTER M*/ 
+.logo-text-right {
+font-family: "High Tide Sans";
+right: 0.2em;
+position:relative;
+
+}
+
+/* NEW color overide for CAM A LINK TITLE*/ 
+.ui-header .ui-title a {
+   color: black;
+ }
+
+
+
+
+body {
+
+font-family: "helvetica" !important;
+font-weight: normal !important;
+
+  /*font-family: 'letter gothic', sans-serif;
+  src: url('../fonts/letter_gothic.ttf') format("opentype"); */
+
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+
+
+
+/* moves the h3 heading for the homescreen */
+.rwd-example .ui-body .home-latest h3 {
+    
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 25px;
+    color: black;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+
+/* green background block on the top image */
+.home-latest {
+  
+  position: relative;
+  top: -60px;
+  height: 38px;
+  background: #d0d262;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier #B8E986 */
+
+}
+
+
+.ui-header .ui-title  {
+    
+    font-weight: normal;                                                                                                                                                                                                                                                   ;
+    font-size: 2.000em;
+    color: black;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+    font-family: 'High Tide', sans-serif;
+}
+
+ .ui-header .ui-title {
+    margin-top: 0px;
+    padding-top: 0.4em;
+}
+
+
+
+
+.ui-header {
+  height: 3em;
+}
+
+/* overide border padding on home top image */
+.ui-header, .ui-footer {
+    border-style: solid;
+    border-width: 0;
+    /*position: relative;*/
+}
+
+.ui-headershow, .ui-footershow {
+    border-style: solid;
+    border-width: 0;
+    position: relative;
+}
+
+
+
+/* this is overdiding the styling on the navigation panel */
+#mypanel {
+
+
+  background-color: #ffffff;
+  /*background-color: #d0d262;*/
+  padding-left: 0;
+}
+
+.ui-panel-inner ul {
+
+list-style-type: none;
+padding-left: 0;
+margin-top: 50px;
+
+}
+
+.ui-panel-inner ul li {
+
+list-style-type: none;
+padding: 0 0 10px 0;
+
+}
+
+
+ .ui-panel-inner a {
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  
+  
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.ui-panel-inner a:hover {
+  
+  
+  color: black;
+   
+}
+
+.ui-panel-inner a:visited {
+    color: black;
+} 
+
+
+/* overide the right margin on the navigation panel */
+.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
+    margin-right: 0;
+    width: auto;
+}
+
+
+
+
+/* changes the icon button on the top right */
+#custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+}
+
+
+/* Basic styles */
+.rwd-example .ui-body h4 {
+    text-align: center;
+    border-color: #ddd;
+}
+
+
+.left-arrow {
+    background-image: url("../images/icons-png/158_Back-1.png");
+    display: block;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    background-repeat: no-repeat;
+    left: 1.2em;
+    top: 0.6em;
+}
+
+
+
+/* SWATCH B swatches for the different bars at the top of the pages */
+
+.ui-bar-b,
+.ui-page-theme-b .ui-bar-inherit,
+html .ui-bar-b .ui-bar-inherit,
+html .ui-body-b .ui-bar-inherit,
+html body .ui-group-theme-b .ui-bar-inherit {
+  background-color: #B8C589 /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  /*text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+}
+
+
+
+/* SWATCH C swatches for the different bars at the top of the pages ABOUT PAGE */
+.ui-bar-c,
+.ui-page-theme-c .ui-bar-inherit,
+html .ui-bar-c .ui-bar-inherit,
+html .ui-body-c .ui-bar-inherit,
+html body .ui-group-theme-c .ui-bar-inherit {
+  background-color: #FAD391 /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+}
+
+/* SWATCH D swatches for the different bars at the top of the pages DISCOVER BAND PAGES */
+.ui-bar-d,
+.ui-page-theme-d .ui-bar-inherit,
+html .ui-bar-d .ui-bar-inherit,
+html .ui-body-d .ui-bar-inherit,
+html body .ui-group-theme-d .ui-bar-inherit {
+  background-color: #D0021B /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+   opacity: 0.55;
+}
+
+/* SWATCH E swatches for the different bars at the top of the pages SPECIAL SHOW PAGES */
+.ui-bar-e,
+.ui-page-theme-e .ui-bar-inherit,
+html .ui-bar-e .ui-bar-inherit,
+html .ui-body-e .ui-bar-inherit,
+html body .ui-group-theme-b .ui-bar-inherit {
+  background-color: #313D4C /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+  
+}
+
+/* SWATCH F swatches for the different bars at the top of the pages LIVE SHOW PAGE */
+.ui-bar-f,
+.ui-page-theme-f .ui-bar-inherit,
+html .ui-bar-f .ui-bar-inherit,
+html .ui-body-f .ui-bar-inherit,
+html body .ui-group-theme-f .ui-bar-inherit {
+  background-color: #B8AD1F /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+  opacity: 0.67;
+  
+}
+
+
+/* SWATCH G swatches for the different bars at the top of the pages NEWS PAGE */
+.ui-bar-g,
+.ui-page-theme-g .ui-bar-inherit,
+html .ui-bar-g .ui-bar-inherit,
+html .ui-body-g .ui-bar-inherit,
+html body .ui-group-theme-g .ui-bar-inherit {
+  background-color: #979797 /*{a-bar-background-color}*/;
+  border-color: #ffffff /*{a-bar-border}*/;
+  color: #333333 /*{a-bar-color}*/;
+  text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+  font-weight: bold;
+  opacity: 0.67;
+  
+}
+
+
+
+/* HOME SCREEN */
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-example-home {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+        height: 1024px;
+    }
+    .rwd-example-home .ui-body {
+       /*min-height: 14em;*/
+    }
+    .rwd-example-home .ui-block-b,
+    .rwd-example-home .ui-block-c {
+      float: left;
+      width: 50.00%;
+      left: 30px;
+
+
+      /* moves the two image blocks up plush with the large image */
+      position: relative;
+      top: -59px;
+    }
+
+
+.rwd-example-home .ui-block-c {
+
+    left: 14px;
+    
+
+
+}
+
+
+
+.rwd-example-home .ui-block-d,
+    .rwd-example-home .ui-block-e {
+      float: left;
+      width: 50.00%;
+      left: 30px;
+
+      /* moves the two image blocks up plush with the latge image */
+      position: relative;
+      top: -35px;
+    }
+
+
+.rwd-example-home .ui-block-e {
+
+  left: 15px;
+  float: right;
+  top: -35px;
+}
+
+
+
+
+
+    .rwd-example-home .ui-block-b p,
+    .rwd-example-home .ui-block-c p {
+      font-size: .8em;
+    }
+    .rwd-example-home > div + div .ui-body {
+        border-top-width: 1px;
+    }
+    .rwd-example-home > div:first-child .ui-body {
+        border-bottom-width: 0;
+    }
+    .rwd-example-home > div:last-child .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+
+
+
+/* Basic styles */
+.rwd-example .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+
+.rwd-example p {
+    color: black
+    line-height: 140%;
+}
+/* Stack all blocks to start */
+.rwd-example .ui-block-a,
+.rwd-example .ui-block-b,
+.rwd-example .ui-block-c {
+    width: 100%;
+    float: none;
+
+}
+/* Collapsing borders */
+.rwd-example > div + div .ui-body {
+    border-top-width: 0;
+}
+
+
+
+
+
+
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-example {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+       
+    }
+    .rwd-example .ui-body {
+       /*min-height: 14em;*/
+    }
+    .rwd-example .ui-block-b,
+    .rwd-example .ui-block-c {
+      float: left;
+      width: 50.00%;
+      left: 30px;
+
+
+      /* moves the two image blocks up plush with the large image */
+      position: relative;
+      top: -59px;
+    }
+
+
+.rwd-example .ui-block-c {
+
+    left: 14px;
+    
+
+
+}
+
+
+
+.rwd-example .ui-block-d,
+    .rwd-example .ui-block-e {
+      float: left;
+      width: 50.00%;
+      left: -355px;
+
+      /* moves the two image blocks up plush with the latge image */
+      position: relative;
+      top: -35px;
+    }
+
+
+.rwd-example .ui-block-e {
+
+  left: 15px;
+  float: right;
+  top: -295px;
+}
+
+
+
+
+
+    .rwd-example .ui-block-b p,
+    .rwd-example .ui-block-c p {
+      font-size: .8em;
+    }
+    .rwd-example > div + div .ui-body {
+        border-top-width: 1px;
+    }
+    .rwd-example > div:first-child .ui-body {
+        border-bottom-width: 0;
+    }
+    .rwd-example > div:last-child .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+
+/* 2nd breakpoint - Float all, 50/25/25 */
+@media all and (min-width: 55em) {
+    .rwd-example .ui-body {
+       min-height: 18em;
+    }
+    .rwd-example .ui-block-a,
+    .rwd-example .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-example .ui-block-b,
+    .rwd-example .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+    .rwd-example > div:first-child .ui-body {
+        border-bottom-width: 1px;
+    }
+    .rwd-example > div + div .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 75em) {
+    .rwd-example .ui-body {
+      font-size: 125%;
+    }
+    .rwd-example .ui-block-a,
+    .rwd-example .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-example .ui-block-b,
+    .rwd-example .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* RADIO SHOW PAGES CSS  */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+.topbox {
+
+
+
+    border: 1px solid black;
+    margin-left: 12px;
+    margin-top: 15px;
+    padding-top: 12px;
+    width: 740px;
+    padding-bottom: 10px;
+}
+
+
+.imagemove {
+
+  margin-left: 26px;
+  width: 687px;
+}
+
+
+
+/* styles the box with the filenumber of the show */
+
+.filenumber {
+  /*border: 0.5px solid black;*/
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  width: 334px;
+  float:left;
+  margin-left: 12px;
+  border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+
+
+}
+
+
+/* styles the box with the transmission date for the show */
+.transmission {
+    
+    border-right: 1px;
+    border-bottom: 1px;
+    width: 406px;
+    float:left;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    margin-top: 0px;
+}
+
+
+/* styles the box with the description of the show */
+.showtext {
+  
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    width: 740px;
+    float:left;
+    margin-left: 12px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    margin-top: 0px;
+
+}
+
+
+/* styles the box that surrounds all items in the playlist section */
+.show-playlist {
+  
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    width: 740px;
+    margin-left: 12px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    margin-top: 0px;
+}
+
+
+
+
+/* styles the a gap to allow all boxes to line up smoothly */
+.showtext-gap {
+
+  padding-bottom: 30px;
+}
+
+
+
+/* styles the list for the playlist*/
+.playlist {
+
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 0;
+  font-weight: normal;
+  margin-left: 130px;
+  padding-top: 50px;
+}
+
+
+
+.playlist li {
+
+          margin-bottom: 1em;
+          padding-bottom: 4px;
+}
+
+
+/* styles playlist box holding the playlist text */
+.playlist-box {
+    border-right: 0.5px;
+    border-bottom: 0.5px;
+    border-left: 0.5px;
+    border-top: 0.5px;
+    float:left;
+    margin-left: 30px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    margin-top: 50px;
+    background-color: #DCF4C3;
+    margin-top: 50px;
+    color: #777;
+
+}
+
+
+.show-playlist .playlist-box p {
+
+  margin: 0;
+  color: black;
+  padding: 2px 8px ;
+
+}
+
+
+/* adjustments for the layout of the audio player*/
+.audio-player {
+
+  margin-left: 170px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+
+.soundcloud-container {
+    margin-left: 10.6em;
+    margin-bottom: 5em;
+}
+
+.soundcloud-container-special {
+    margin-left: 1.7em;
+    margin-bottom: 5em;
+    margin-top: 1em;
+}
+
+
+
+
+.rwd-exampleshow .ui-bodyshow h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    margin-top: 6px;
+    padding-left: 25px;
+    
+    text-align: left;
+}
+
+.rwd-exampleshow .ui-bodyshow h2 {
+    color: black;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-bottom: 9px;
+    margin-top: 18px;
+    padding-left: 25px;
+    
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* Basic styles for show pages*/
+.rwd-exampleshow .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-exampleshow p {
+    color: #777;
+    line-height: 140%;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-size: 12px;
+    
+
+}
+/* Stack all blocks to start */
+.rwd-exampleshow .ui-blockshow-a,
+.rwd-exampleshow .ui-blockshow-b,
+.rwd-exampleshow .ui-blockshow-c {
+    width: 100%;
+    float: none;
+}
+/* Collapsing borders */
+.rwd-exampleshow > div + div .ui-bodyshow {
+    border-top-width: 0;
+}
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-exampleshow {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+    }
+    .rwd-exampleshow .ui-bodyshow {
+       /*min-height: 14em;   took this out for the box to level with the file number box and the transmission date box*/  
+    }
+    .rwd-exampleshow .ui-blockshow-b,
+    .rwd-exampleshow .ui-blockshow-c {
+      float: left;
+      width: 45.3%;
+
+
+     
+    }
+
+.rwd-exampleshow .ui-blockshow-d,
+    .rwd-exampleshow .ui-blockshow-e {
+      /* float: left;      taken out so that it floats left correctly*/
+      width: 49.95%;
+      float: left; 
+
+
+      /* moves the two image blocks up plush with the large image */
+      
+    }
+
+
+.rwd-exampleshow .ui-blockshow-b p,
+    .rwd-exampleshow .ui-blockshow-c p {
+      font-size: .8em;
+    }
+    .rwd-exampleshow > div + div .ui-bodyshow {
+        border-top-width: 1px;
+    }
+    .rwd-exampleshow > div:first-child .ui-bodyshow {
+        border-bottom-width: 0;
+    }
+    .rwd-exampleshow > div:last-child .ui-bodyshow {
+        border-left-width: 0;
+    }
+}
+
+
+/* 2nd breakpoint - Float all, 50/25/25 */
+@media all and (min-width: 55em) {
+    .rwd-exampleshow .ui-bodyshow {
+       min-height: 18em;
+    }
+    .rwd-exampleshow .ui-blockshow-a,
+    .rwd-exampleshow .ui-blockshow-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-exampleshow .ui-blockshow-b,
+    .rwd-exampleshow .ui-blockshow-c {
+      float: left;
+      width: 24.925%;
+    }
+    .rwd-exampleshow > div:first-child .ui-bodyshow {
+        border-bottom-width: 1px;
+    }
+    .rwd-exampleshow > div + div .ui-bodyshow {
+        border-left-width: 0;
+    }
+}
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 75em) {
+    .rwd-exampleshow .ui-bodyshow {
+      font-size: 125%;
+    }
+    .rwd-exampleshow .ui-blockshow-a,
+    .rwd-exampleshow .ui-blockshow-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-exampleshow .ui-blockshow-b,
+    .rwd-exampleshow .ui-blockshow-c {
+      float: left;
+      width: 24.925%;
+    }
+}
+
+
+
+
+
+
+
+/* ARCHIVE PAGE */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+.archive {
+
+  font-weight: normal;
+
+}
+
+.archive h1 {
+  text-align: center;
+  font-size: 2.250em;
+  font-weight: normal;
+}
+
+
+.number-white-box {
+background-color: white;
+width: 75px;
+height: 75px;
+position:relative;
+z-index: 3000;
+top: -380px;
+left: 20px;
+
+text-align:center;
+
+
+}
+
+
+.number-white-box h1 {
+    
+    line-height:75px;
+    vertical-align:middle;
+}
+
+/* controls the text that says diweddaraf / latest */
+.archie-topbar {
+  border-top-style: solid;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-top: 1em;
+  margin-top: 0;
+  border-width: 1px;
+
+  font-weight: normal;
+
+}
+
+
+
+/* controls the large show numbers on the archive page */
+.arch-number {
+  font-size: 12.0em;
+  margin-right: 0.7em;
+  margin-left:0.4em;
+  float:left;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #B8E986;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* controls  */
+
+.archive ul  {
+
+    list-style-type: none;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: -2.54em;
+}
+
+
+.archive ul li {
+
+    border-top-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+   
+}
+
+
+/* controls colours for different numbers dependednt on which month. */
+.archive-brown h3 {
+
+  color: #D0D262 ;
+}
+
+.archive-aside {
+
+
+}
+ 
+
+/* ABOUT PAGE */
+/* /////////////////////////////////////////////////////////////////////////  */
+/* brown background block under the top image */
+
+.about-title {
+  
+  position: relative;
+  top: -42px;
+  height: 38px;
+  background: #FAD391;
+  opacity: 0.9;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  color:white;
+}
+
+.about-title-profile {
+  
+  position: relative;
+  top: -91px;
+  height: 38px;
+  background: #FAD391;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+
+}
+
+
+.amdan {
+
+    font-size: 0.875em;
+    margin-left: 3em;
+    position: relative;
+    top: -85px;
+    z-index: 100;
+    font-style: normal;
+    color: black;
+    font-weight: normal;
+}
+
+.profil {
+
+    font-size: 0.875em;
+    margin-left: 3em;
+    position: relative;
+    top: -130px;
+    z-index: 101;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-weight: normal;
+    
+}
+
+
+.small-about-text {
+    
+    padding-left: 3em;
+    font-style: normal;
+    width: 85.95%;
+
+}
+
+.small-about-text-right {
+    
+    padding-left: 2em;
+    font-style: normal;
+    width: 88.95%;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+/* small box on the about page with lincs text in it */
+.lincs-box {
+    
+    float:left;
+    background-color: #FAD391;
+    font-style: normal;
+    color: black;
+    margin-left: 3em;
+    margin-top: 6em;
+    padding: 2px 8px 0;
+
+}
+
+
+.lincs-box p {
+
+  margin: 0;
+  color: black;
+ 
+  font-size: 0.75em;
+
+}
+
+
+
+.social-lincs {
+  font-weight: normal;
+  margin-left: 3em;
+}
+
+
+
+
+/* social links at the bottom of the page */
+.social-lincs ul  {
+
+    list-style-type: none;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: -2.54em;
+}
+
+
+.social-lincs ul li {
+
+    
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 1em;
+   
+}
+
+.social-lincs ul li a {
+
+   color: black;
+   
+}
+
+
+/* ammeding the styles for the links at the bottom of the about page */
+.social-lincs a {
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-style: italic;
+  
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.social-lincs li a:hover {
+  
+  color: black;
+  }
+
+
+.social-lincs li a:visited {
+
+  color: black;
+
+}
+
+
+
+/* new about page  */
+.cam-web-link {
+
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width:270px;
+      margin-bottom:2em;
+
+}
+
+
+.cam-web-link a {
+
+     font-style: normal;
+     font-weight: bold !important;
+
+}
+
+
+.small-about-text-right ul {
+
+  list-style-type: none;
+  padding:0;
+}
+
+.about-top-list {
+margin-left: 2.1em;
+
+}
+
+.about-logos {
+
+
+      margin-left: 4em;
+      
+      margin-bottom: 4em;
+}
+
+
+
+
+
+
+.about-logos-individual ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+}
+
+
+.about-logos-individual ul li {
+   display: inline;
+}
+
+
+/* givis margin to the logos at the bottom of the about page  */
+.center-logo {
+    margin-left: 7em;
+    margin-right: 8em;
+    position: relative;
+    top: 0.5em;
+
+}
+
+.left-logo {
+  margin-left: 2em;
+}
+
+
+
+
+/* DISCOVERY BAND PROFILE PAGES */
+/* /////////////////////////////////////////////////////////////////////////  */
+  
+  .band-title {
+  
+  position: relative;
+  top: -42px;
+  height: 38px;
+  background: white;
+  /*opacity: 0.8;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  color:white;
+}
+
+.band-title-biography {
+  
+  position: relative;
+  top: -91px;
+  height: 38px;
+  background: #FF7C76;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+
+}
+ 
+
+/* small box on the band discovery page with lincs text in it */
+.lincs-box-band {
+    
+    float:left;
+    background-color: #FF7C76;
+    font-style: normal;
+    color: black;
+    margin-left: 3em;
+    margin-top: 6em;
+    padding: 2px 8px 0;
+    
+
+}
+
+.lincs-box-band p {
+
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 0.75em;
+
+}
+
+
+/*
+iframe {
+    margin-left: 3em;
+
+}*/
+
+.video-container {
+  
+  margin-top: 1em;
+  margin-bottom: 6em;
+
+}
+
+
+
+/* Basic styles */
+.rwd-discover .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-discover p {
+    color: #777;
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.rwd-discover .ui-block-a,
+.rwd-discover .ui-block-b,
+.rwd-discover .ui-block-c {
+    width: 100%;
+    float: none;
+    
+}
+/* Collapsing borders */
+.rwd-discover > div + div .ui-body {
+    border-top-width: 0;
+}
+
+
+/* ensures the images on the discover page all line up close together */
+.rwd-discover .ui-block-a {
+    clear: left;
+    height: 23.6em;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-discover {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+    }
+    .rwd-discover .ui-body {
+       /*min-height: 14em;*/
+    }
+    .rwd-discover .ui-block-b,
+    .rwd-discover .ui-block-c {
+      float: left;
+      width: 50.00%;
+
+
+      /* moves the two image blocks up plush with the large image */
+      position: relative;
+      top: -62px;
+    }
+
+.rwd-discover .ui-block-d,
+    .rwd-discover .ui-block-e {
+      float: left;
+      width: 50.00%;
+
+
+      /* moves the two image blocks up plush with the latge image */
+      position: relative;
+      top: -70px;
+    }
+
+
+
+
+
+
+
+
+    .rwd-discover .ui-block-b p,
+    .rwd-example .ui-block-c p {
+      font-size: .8em;
+    }
+    .rwd-discover > div + div .ui-body {
+        border-top-width: 1px;
+    }
+    .rwd-discover > div:first-child .ui-body {
+        border-bottom-width: 0;
+    }
+    .rwd-discover > div:last-child .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+
+/* 2nd breakpoint - Float all, 50/25/25 */
+@media all and (min-width: 55em) {
+    .rwd-discover .ui-body {
+       min-height: 18em;
+    }
+    .rwd-discover .ui-block-a,
+    .rwd-discover .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-discover .ui-block-b,
+    .rwd-discover .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+    .rwd-discover > div:first-child .ui-body {
+        border-bottom-width: 1px;
+    }
+    .rwd-discover > div + div .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 75em) {
+    .rwd-discover .ui-body {
+      font-size: 125%;
+    }
+    .rwd-discover .ui-block-a,
+    .rwd-discover .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-discover .ui-block-b,
+    .rwd-discover .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN SPECIAL  shows PAGE */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+.special-list-shows {
+
+
+}
+
+/* Basic styles */
+
+
+/*.rwd-specials .ui-body-e {
+    text-align: left;
+    border-color: #ddd;
+    height:378px;
+}*/
+
+
+
+/* Basic styles */
+.rwd-special .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-special p {
+    color: #777;
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.rwd-special .ui-block-a,
+.rwd-special .ui-block-b,
+.rwd-special .ui-block-c {
+    width: 100%;
+    float: left;
+}
+/* Collapsing borders */
+.rwd-special > div + div .ui-body {
+    border-top-width: 0;
+}
+
+.rwd-special .ui-block-a {
+    clear: left;
+    height: 23.6em;
+    margin-bottom: 0em;
+   
+}
+
+
+
+
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-special {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+    }
+    .rwd-special .ui-body {
+       /*min-height: 14em;*/
+
+    }
+    .rwd-special .ui-block-b,
+    .rwd-special .ui-block-c {
+      float: left;
+      width: 100%;
+
+
+     
+    }
+
+.rwd-special .ui-block-d,
+    .rwd-special .ui-block-e {
+      float: left;
+      width: 49.95%;
+
+
+      /* moves the two image blocks up plush with the latge image 
+      position: relative;
+      top: -67px;*/
+    }
+
+    .rwd-special .ui-block-b p,
+    .rwd-special .ui-block-c p {
+      font-size: .8em;
+    }
+    .rwd-special > div + div .ui-body {
+        border-top-width: 1px;
+    }
+    .rwd-special > div:first-child .ui-body {
+        border-bottom-width: 0;
+    }
+    .rwd-special > div:last-child .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+
+/* 2nd breakpoint - Float all, 50/25/25 */
+@media all and (min-width: 55em) {
+    .rwd-special .ui-body {
+       min-height: 18em;
+    }
+    .rwd-special .ui-block-a,
+    .rwd-special .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-special .ui-block-b,
+    .rwd-special .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+    .rwd-special > div:first-child .ui-body {
+        border-bottom-width: 1px;
+    }
+    .rwd-special > div + div .ui-body {
+        border-left-width: 0;
+    }
+}
+
+
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 75em) {
+    .rwd-special .ui-body {
+      font-size: 125%;
+    }
+    .rwd-special .ui-block-a,
+    .rwd-special .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .rwd-special .ui-block-b,
+    .rwd-special .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+}
+
+
+
+
+    
+
+/* SPECIAL INDIVIDUAL PAGES */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+/* first coloured box bar at sitting on top of the main image */
+.special-title {
+  
+  position: relative;
+  top: -18px;
+  height: 38px;
+  background: white;
+  margin-left: 1.5em;
+  /*opacity: 0.8;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  color: black;
+  font-family: "helvetica" !important;
+}
+
+
+.special-title h3 {
+
+    font-size: 1.5em;
+    font-family: "helvetica" !important;
+   
+}
+
+.special-title, .special-title-biography, .playlist-box-special, .special-playlist .lincs-box-special {
+
+font-family: "Helvetica" !important;
+
+}
+
+.show-description-right, .social-lincs-special, .playright {
+
+font-family: "Helvetica" !important;
+}
+
+/* details for the transmission datecontrols the location of the transmission date in the top right */
+.special-title-biography {
+  
+  position: relative;
+  top: -60px;
+  height: 38px;
+  float: right;
+  font-size: 1em;
+  margin-right: 2em;
+
+  /*background: #505A67;
+  opacity: 0.5;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+
+}
+
+
+
+
+
+/* details for the transmission date */
+.special-title-biography h3 {
+
+font-size: 0.8em;
+
+}
+
+
+.special-title-date {
+  
+    float: right;
+    left: -30px;
+    margin-bottom: 2em;
+    margin-top: 3.1em;
+    position: relative;
+    width: 63%;
+    
+    
+}
+
+
+
+
+.profil-special {
+
+    font-size: 0.675em;
+    margin-left: 3.8em;
+    position: relative;
+    top: -130px;
+    z-index: 101;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: black;
+    text-shadow: none;
+    
+}
+ 
+
+/* small box on the band discovery page with lincs text in it */
+.lincs-box-special {
+    
+    float:left;
+    /*background-color: #313D4C;*/
+    font-style: normal;
+    
+    
+    margin-top: 0em;
+    padding: 5px 8px 0;
+    margin-left: 2.3em;
+    
+
+}
+
+.lincs-box-special p {
+
+  margin: 0;
+  color: black;
+  
+  /*font-size: 0.75em;*/
+  
+}
+
+
+/* styles the box that surrounds all items in the playlist section */
+.special-playlist {
+  
+    border-right: 0.5px;
+    border-bottom: 0.5px;
+    border-left: 0.5px;
+    
+    /*margin-left: 12px;*/
+    float:left;
+    position:relative;
+    margin-top: -5em;
+
+
+}
+
+
+/* styles the box that surrounds all items in the playlist section */
+.special-playlist-show {
+  
+    border-right: 0.5px;
+    border-bottom: 0.5px;
+    border-left: 0.5px;
+    
+    /*margin-left: 12px;*/
+    float:left;
+    position:relative;
+    margin-top: -5em;
+    width:100%;
+
+}
+
+
+/* styles for the description  box */
+.show-description-right {
+  
+  width: 63%;
+  float:right;
+  margin-top: 2.1em;
+  position:relative;
+  
+  left: -30px;
+  
+
+  margin-bottom: 2em;
+
+
+}
+
+.show-description-right p {
+
+/*font-size: 12px;*/
+font-weight: normal;
+color: #000000;
+
+
+}
+
+
+/* styles for the description box  */
+.show-description-right-show {
+  
+  width: 63%;
+  float:right;
+  margin-top: 0.2em;/*2.1 em is the old value     */
+  position:relative;
+  left: -30px;
+  
+  
+
+  margin-bottom: 2em;
+
+
+}
+
+.show-description-right-show p {
+
+/*font-size: 12px;*/
+font-weight: normal;
+color: #000000;
+
+
+}
+
+
+
+/* styles for the track playlist box */
+.playright {
+  
+  width: 68%;
+  float:right;
+  /*top:-18px;*/
+  position:relative;
+  left: -30px;
+  margin-bottom: 2em;
+
+}
+
+/* styles for the track playlist box */
+.playright-show {
+  
+  width: 68%;
+  float:right;
+  /*top:-18px;*/
+  position:relative;
+  left: 10px;
+  margin-bottom: 2em;
+
+}
+
+
+.social-links-container {
+
+
+}
+
+
+
+
+/* styles the a gap to allow all boxes to line up smoothly */
+.showtext-gap {
+
+  padding-bottom: 30px;
+}
+
+
+
+/* styles the list for the playlist*/
+.playlist-special {
+
+  list-style-type: none;
+  /*font-size: 12px;*/
+  margin-top: 0;
+  font-weight: normal;
+  margin-left: 0px;
+  
+  /*font-weight: bold;*/
+}
+
+
+.playlist-special ul {
+
+  padding-left: 0px;
+  
+  /*font-weight: bold;*/
+}
+
+
+
+.playlist-special li {
+
+          margin-bottom: 1em;
+          padding-bottom: 4px;
+}
+
+
+
+/* styles the list for the playlist*/
+.playlist-special-show {
+
+  list-style-type: none;
+  /*font-size: 12px;*/
+  margin-top: 0;
+  font-weight: normal;
+  margin-left: 0px;
+  padding-left: 0px;
+  
+  /*font-weight: bold;*/
+}
+
+
+
+.playlist-special-show li {
+
+          margin-bottom: 1em;
+          padding-bottom: 4px;
+}
+
+
+
+.description-special {
+    
+    float:left;
+    margin-top: 50px;
+    /*background-color: #313D4C;*/
+    text-shadow: none;
+    font-style:normal;
+    color: black;
+    
+    margin-left: 2.0em;
+    
+
+}
+
+.date-special {
+
+    float:left;
+    margin-top: 0px;
+    /*background-color: #313D4C;*/
+    text-shadow: none;
+    font-style:normal;
+    color: black;
+    
+    margin-left: 2.0em;
+
+}
+
+.date-special p {
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.date-special-test {
+
+    float:left;
+    margin-top: 0px;
+    /*background-color: #313D4C;*/
+    text-shadow: none;
+    font-style:normal;
+    color: black;
+    
+    margin-left: 2.0em;
+
+}
+
+.date-special-test p {
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+
+.show-title-dark {
+  font-weight: bold;
+}
+
+
+
+hr {
+
+  width: 92%;
+}
+
+
+.special-title-date {
+    float: right;
+    left: -30px;
+    margin-bottom: 0;
+    margin-top: -1em;
+    position: relative;
+    width: 63%;
+}
+
+
+.description-special p {
+
+    color: black;
+    /*font-size: 0.75em;*/
+    font-weight: normal;
+    margin: 0;
+  }
+
+
+
+
+/* social links at the bottom of the page */
+.social-lincs-special {
+    
+    float: right;
+    left: -30px;
+    margin-top: 5px;
+    
+    position: relative;
+    width: 68%;
+    
+
+}
+
+
+/* social links at the bottom of the page */
+.social-lincs-special ul  {
+
+    list-style-type: none;
+    
+    margin-bottom: 5em;
+    margin-top: 0;
+    
+    
+    
+}
+
+
+.social-lincs-special ul li {
+
+    
+    
+    
+    margin-bottom: 1em;
+    
+   
+}
+
+.social-lincs-special ul li a {
+
+   color: black;
+   /*font-weight: bold;*/
+   
+}
+
+
+/* ammeding the styles for the links at the bottom of the about page */
+.social-lincs-special a {
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.social-lincs-special li a:hover {
+  
+  color: black;
+  }
+
+
+.social-lincs-special li a:visited {
+
+  color: black;
+
+}
+
+
+
+
+/* social links at the bottom of the page */
+.social-lincs-special-show {
+    
+    float: right;
+    left: -30px;
+    margin-top: 5px;
+    
+    position: relative;
+    width: 68%;
+    
+
+}
+
+/* social links at the bottom of the page for the show pages/ this was a bug override for the padding*/
+.social-lincs-special-show ul  {
+
+    list-style-type: none;
+    
+    margin-bottom: 5em;
+    margin-top: 0;
+    
+    
+    
+}
+
+
+.social-lincs-special-show ul li {
+
+    
+    
+    
+    margin-bottom: 1em;
+    
+   
+}
+
+.social-lincs-special-show ul li a {
+
+   color: black;
+   /*font-weight: bold;*/
+   
+}
+
+
+/* ammeding the styles for the links at the bottom of the about page */
+.social-lincs-special-show a {
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.social-lincs-special-show li a:hover {
+  
+  color: black;
+  }
+
+
+.social-lincs-special-show li a:visited {
+
+  color: black;
+
+}
+
+
+
+
+.playlist-middle {
+
+    position: relative;
+    
+
+}
+
+
+
+/* styles playlist box holding the playlist text on special show pages */
+.playlist-box-special {
+    
+    float:left;
+    /*margin-top: 165px;*/
+    /*background-color: #313D4C;*/
+    text-shadow: none;
+    font-style:normal;
+    color: black;
+    
+    margin-left: 2.3em;
+    
+
+
+}
+
+
+.playlist-box-special p {
+
+    color: black;
+    /*font-size: 0.75em;*/
+   
+    margin: 0;
+  }
+
+.audio-player-special {
+
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+
+/* main footer text */
+.special-footer {
+
+
+font-weight: bold !important;
+
+position: relative;
+font-size: 0.7em;
+width: 155px;
+
+margin-left: 9em;
+
+overflow:hidden;
+
+
+}
+
+.special-footer p {
+
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LIVE PAGE STYLES */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+/* first coloured box bar at sitting on top of the main image */
+.live-title {
+  
+  position: relative;
+  top: -42px;
+  height: 38px;
+  background: #B8AD1F;
+  opacity: 0.8;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  color:white;
+}
+
+
+/* second coloured box bar at sitting on top of the main image */
+.live-title-broadcast {
+  
+  position: relative;
+  top: -91px;
+  height: 38px;
+  background: #C3BB2E;
+  opacity: 0.5;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+
+}
+
+
+.profil-special {
+
+    font-size: 0.675em;
+    margin-left: 3.8em;
+    position: relative;
+    top: -127px;
+    z-index: 101;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: black;
+    text-shadow: none;
+    
+}
+
+
+
+/* small box on the band discovery page with lincs text in it */
+.lincs-box-live {
+    
+    float:left;
+    background-color: #C3BB2E;
+    font-style: normal;
+    
+    margin-left: 3em;
+    margin-top: 5em;
+    padding: 5px 8px 0;
+    
+
+}
+
+.lincs-box-live p {
+
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: white;
+}
+
+
+
+
+
+
+/* main footer text */
+.live-footer {
+
+
+font-weight: bold !important;
+
+position: relative;
+font-size: 0.7em;
+width: 155px;
+
+margin-left: auto;
+margin-right: auto;
+overflow:hidden;
+top: -20px;
+
+}
+
+.live-footer p {
+
+color: black;
+}
+
+ 
+/* Basic styles */
+.rwd-live .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-live p {
+    
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.rwd-live .ui-block-a,
+.rwd-live .ui-block-b,
+.rwd-live .ui-block-c {
+    width: 100%;
+    float: none;
+
+}
+/* Collapsing borders */
+.rwd-live > div + div .ui-body {
+    border-top-width: 0;
+}
+
+
+
+
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .rwd-live {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+    }
+    .rwd-live .ui-body {
+       /*min-height: 14em;*/
+    }
+    .rwd-live .ui-block-b,
+    .rwd-live .ui-block-c {
+      float: left;
+      width: 50.00%;
+
+
+      /* moves the two image blocks up plush with the large image */
+      position: relative;
+      top: -59px;
+    }
+
+.rwd-live .ui-block-d,
+    .rwd-live .ui-block-e {
+      float: left;
+      width: 100.00%;
+
+}
+
+
+.small-live-text-right {
+    
+    padding-left: 2.1em;
+    font-style: normal;
+    width: 88.95%;
+    margin-bottom: 3em;
+}
+
+}
+
+
+
+/* News PAGE */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+.news-main {
+
+  font-weight: normal;
+
+}
+
+.news-main h4 {
+  
+  color: #4A90E2;
+  font-weight: normal;
+  color: ;
+}
+
+
+.news-main p {
+  color: #979797;
+}
+
+
+.news-main img {
+
+  margin-bottom: -0.4em;
+}
+
+
+
+
+
+
+
+
+
+/* controls  */
+
+.news-main ul  {
+
+    list-style-type: none;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: -2.5em; 
+    margin-top: 0;
+}
+
+
+.news-main ul li {
+
+    border-bottom-style: solid;
+    border-width: 1px;
+    color: #979797;
+}
+
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a  {
+    font-weight: normal;
+    text-decoration: none;
+    font: black;
+}
+
+.ui-page-theme-a a, a:visted {
+color: black;
+
+}
+
+
+.news-text {
+  font-size: 0.8em;
+  margin-right: 4.593em;
+  margin-left:2.0em;
+  float:left;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  
+  font-weight: normal;
+  font-style: normal;
+  width:50.2%;
+}
+
+
+.news-main ul li a {
+
+   color: black;
+   
+}
+
+
+/* ammeding the styles for the links at the bottom of the about page */
+.news-main a {
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.news-main li a:hover {
+  
+  color: black;
+  }
+
+
+.news-main li a:visited {
+
+  color: black;
+
+}
+
+
+
+
+
+
+/* News INDIVIDUAL PAGE */
+/* /////////////////////////////////////////////////////////////////////////  */
+
+
+
+/* News titles underneath the imageson the individual pages  */
+.news-titles {
+
+  margin-left: 3em;
+  margin-bottom: 3em;
+
+
+}
+
+
+/* news article content   */
+
+.news-article-content {
+
+      margin-left: 3em;
+      margin-right: 3em;
+      margin-bottom: 5em;
+
+
+}
+
+
+.rwd-news .news-article-content .iframe .youtube-player {
+
+  margin-left: 0em !important;
+
+}
+
+
+/* icon for the share button   */
+.ui-button-action {
+  background: url("../images/icons-svg/action-black.svg");
+  right: 7em;
+  text-decoration: none;
+  top: 0em;
+  position: absolute;
+  width: 30px !important;
+  height: 30px !important;
+  background-repeat: no-repeat;  
+  position: absolute;
+  
+  
+  
+
+
+}
+/* Fallback 
+.ui-button-action  {
+  background: url("../images/icons-png/action-.png");
+}*/
+
+
+
+
+
+/* Basic styles */
+.rwd-news .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-news p {
+    color: #777;
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.rwd-news .ui-block-a,
+.rwd-news .ui-block-b,
+.rwd-news .ui-block-c {
+    width: 100%;
+    float: left;
+}
+/* Collapsing borders */
+.rwd-news > div + div .ui-body {
+    border-top-width: 0;
+}
+
+.rwd-news .ui-block-a {
+    clear: left;
+    
+    margin-bottom: 0em;
+   
+}
+
+
+
+
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (max-width: 28em) {
+
+
+
+
+
+.ui-button-action {
+  background: url("../images/icons-svg/action-black.svg");
+  right: 7em;
+  text-decoration: none;
+  top: 1.3em;
+  position: absolute;
+  width: 30px !important;
+  height: 30px !important;
+  background-repeat: no-repeat;  
+  position: absolute;
+  
+  
+  
+
+
+}
+
+.news-article-content {
+    margin-left: 1em !important;
+   
+}
+
+}
+
+
+
+
+
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+/*main mobile screen */
+
+
+
+
+/* Basic styles home mobile page*/
+.rwd-live .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.rwd-live p {
+    
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.rwd-live .ui-block-a,
+.rwd-live .ui-block-b,
+.rwd-live .ui-block-c {
+    width: 100%;
+    float: none;
+
+}
+/* Collapsing borders */
+.rwd-live > div + div .ui-body {
+    border-top-width: 0;
+    margin-top: -0.4em;
+}
+
+
+
+
+.live-social-links-icons {
+    height: 56px;
+
+}
+
+
+
+
+
+/* social link icons on the live page */
+.live-social-links-icons ul {
+
+   
+    list-style-type: none;
+     width: 100% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 0.3em;
+
+}
+
+
+
+/* social link icons on the mobile home page */
+.live-social-links-icons ul li {
+  display: inline;
+  margin-right: 2em; 
+  
+  
+}
+
+
+.divider{
+    position:absolute;
+    left:30%;
+    top:-10%;
+    bottom:-10%;
+    border-left:1px solid grey;
+
+}
+
+
+
+
+
+
+
+
+/* menu navigation */
+
+.nav { 
+
+  position:fixed;
+  bottom:0px;
+
+  width: 100%; 
+
+}
+
+
+
+/* menu navigation for the footer navigation*/
+.nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+.nav ul li { display: inline-block; }
+.nav ul li a { display: block; padding: 10px 20px; text-decoration: none; color: #444; }
+.nav ul li a:hover { background-color: #888; color: #fff; }
+
+@media (max-width:48.000em){
+  .example-header .container { width: 100%; }
+    .nav ul { width: 100%; font-weight: normal; }
+    .nav ul li { width: 25%; float: left; background-color: white; }
+    .nav ul li:nth-of-type(odd) a { border-right: 1px solid #ccc; }
+    .nav ul li a { padding: 8px 0px; border-right: 1px solid #ccc; display: block; }
+
+
+
+/* mobile overides for the CAM title at the top of every page*/
+.ui-header .ui-title {
+    color: black;
+    font-family: "High Tide",sans-serif;
+    font-size: 1.8em !important;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 0.4em;
+    text-align: center;
+    /*margin-top: 0.2em;*/
+
+}
+
+
+
+
+
+/* mobile overides for moving the far right nav icon*/
+.ui-btn-left, .ui-btn-right {
+    position: absolute;
+    text-decoration: none;
+    top: 0em;
+}
+
+
+
+
+
+.ui-header-fixed .ui-btn-left, .ui-header-fixed .ui-btn-right {
+    margin-top: 1.1em!important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+
+.ui-panel-inner {
+    font-family: helvetica !important;
+}
+
+
+
+
+
+
+/* left arrow icon */
+  .ui-btn-left {
+    position: absolute;
+    text-decoration: none;
+    top: -0.4em;
+
+}
+
+
+/* LIVE LIVE LIVE PAGE*/
+/* delete share button from screen*/
+        .ui-button-action {
+    background: url("../images/icons-svg/action-black.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 0px !important;
+    position: absolute;
+    right: 7em;
+    text-decoration: none;
+    top: 1.3em;
+    width: 0px !important;
+    display:none;
+}
+
+
+
+/* ABOUT ABOUT ABOUT PAGE*/
+.small-about-text-right {
+    font-style: normal;
+    margin-bottom: 6em;
+    padding-left: 2em;
+    width: 86.95%;
+    margin-top: 2em;
+}
+
+
+
+body, input, select, textarea, button, .ui-btn {
+    font-family: helvetica;
+    font-size: 0.8em;
+    line-height: 1.3;
+}
+
+
+/* ARCHIVE ARCHIVE ARCHIVE PAGE*/
+/* mobile overides for archive page*/
+.rwd-special .ui-block-a {
+    clear: left;
+    height: 12em;
+    margin-bottom: 0;
+}
+
+
+/* MIXES MIXES MIXES PAGE*/
+/* mobile overides for archive page*/
+.rwd-discover .ui-block-a {
+    clear: left;
+    height: 12.3em;
+    margin-bottom: 0;
+}
+
+/* to clear the a block gap at the bottom of the page*/
+.bottom-clear {
+      height: 3em !important;
+
+}
+
+
+
+
+/* INDIVIDUAL SHOW PAGES*/
+/* mobile overides for INDIVIDUAL PAGES page*/
+
+.date-special {
+    color: black;
+    float: left;
+    font-style: normal;
+    margin-left: 1em;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+.playlist-box-special {
+    color: black;
+    float: left;
+    font-style: normal;
+    margin-left: 1em;
+    text-shadow: none;
+}
+
+.lincs-box-special {
+    float: left;
+    font-style: normal;
+    margin-left: 1em;
+    margin-top: 0;
+    padding: 5px 8px 0;
+}
+
+.show-description-right-show {
+    float: right;
+    left: -12px;
+    margin-bottom: 2em;
+    margin-top: 0.2em;
+    position: relative;
+    width: 63%;
+}
+
+.special-title-date {
+    float: right;
+    left: -12px;
+    margin-bottom: 0;
+    margin-top: -1em;
+    position: relative;
+    width: 63%;
+}
+
+.social-lincs-special-show {
+    float: right;
+    left: -100px;
+    margin-top: 0.4em;
+    position: relative;
+    width: 48%;
+}
+
+.playright-show {
+    float: right;
+    left: -12px;
+    margin-bottom: 2em;
+    
+    position: relative;
+    width: 63%;
+}
+
+
+
+.special-playlist-show {
+   font-size: 
+}
+
+
+}
+
+.special-footer {
+    font-size: 0.7em;
+    font-weight: bold !important;
+    margin-bottom: 6em;
+    margin-left: 5em;
+    overflow: hidden;
+    position: relative;
+    width: 155px;
+}
+
+
+
+
+/* IPHONE 6 CODE OVERIDES AND CHANGES*/
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+
+/* deletes the container for the mobile navigation*/
+  .rwd-discover .ui-block-a {
+   
+    height: 14.4em;
+   
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* IPHONE 6PLUS CODE OVERIDES AND CHANGES*/
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+
+/* deletes the container for the mobile navigation*/
+  .rwd-discover .ui-block-a {
+   
+    height: 15.8em;
+   
+}
+
+
+
+}
+
+
+
+
+/* IPAD MEDIA QUERIES*/
+/* mobile overides for INDIVIDUAL PAGES page*/
+@media screen and (min-width: 768px) {
+
+/* deletes the container for the mobile navigation*/
+  .container {
+    display: true;
+  }
+
+
+
+}
+
+
+
+
