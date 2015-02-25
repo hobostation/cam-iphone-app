@@ -44,10 +44,10 @@
   <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>-->
 
-    <!-- for iOS -->
+    <!-- for iOS 
 <feature name="SocialSharing">
   <param name="ios-package" value="SocialSharing" />
-</feature>
+</feature>-->
 
 <!-- for Android (you will find one in res/xml) 
 <feature name="SocialSharing">
