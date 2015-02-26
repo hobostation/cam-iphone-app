@@ -253,7 +253,7 @@ font-weight: normal !important;
 
 
 .ui-header {
-  height: 3em;
+  height: 3.5em;
 }
 
 /* overide border padding on home top image */
@@ -2821,7 +2821,7 @@ color: black;
     font-size: 1.8em !important;
     font-style: normal;
     font-weight: normal;
-    padding-top: 0.4em;
+    padding-top: 0.6em;
     text-align: center;
     /*margin-top: 0.2em;*/
 
@@ -2832,7 +2832,7 @@ color: black;
 
 
 /* mobile overides for moving the far right nav icon*/
-.ui-btn-left, .ui-btn-right {
+.ui-btn-right {
     position: absolute;
     text-decoration: none;
     top: 0em;
@@ -2847,7 +2847,10 @@ color: black;
 }
 
 
+.ui-btn-right {
 
+  top: 0.5em;
+}
 
 
 
@@ -2868,7 +2871,7 @@ color: black;
   .ui-btn-left {
     position: absolute;
     text-decoration: none;
-    top: -0.4em;
+    top: 0em;
 
 }
 
