@@ -35,14 +35,14 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
     
-    <!--<feature name="InAppBrowser">
+    <feature name="InAppBrowser">
     <param name="ios-package" value="CDVInAppBrowser" />
     <param name="onload" value="true" />
     </feature>
 
     <feature name="InAppBrowser">
   <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
-    </feature>-->
+    </feature>
 
     <!-- for iOS 
 <feature name="SocialSharing">
